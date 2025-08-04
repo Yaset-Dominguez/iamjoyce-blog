@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Am Joyce – Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #ffffff, #ffe6f0);
+      margin: 0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #ff8a9d, #ffa4b8);
+      padding: 40px;
+      text-align: center;
+      color: white;
+      border-bottom: 5px solid #fff0f5;
+    }
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+    header p {
+      font-size: 18px;
+      margin: 8px 0;
+    }
+    nav {
+      background: #fff0f5;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin: 0 25px;
+      text-decoration: none;
+      color: #c94f7c;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    .content {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .hidden {
+      display: none;
+    }
+    h2 {
+      color: #ff5c8d;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .post img, .post video, img, video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      display: block;
+    }
+    .footer {
+      background: #ffe6f0;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+  <script>
+    function showPage(id) {
+      const sections = document.querySelectorAll('.page');
+      sections.forEach(section => section.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+    }
+    window.onload = () => showPage('home');
+  </script>
+</head>
+<body>
+  <header>
+    <h1>I Am Joyce</h1>
+    <p>My Story, My Values, My Voice</p>
+    <p><strong>By: Joyce Brigeed Acosta Orejarena</strong></p>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('memory')">Memory</a>
+    <a href="#" onclick="showPage('video')">My Voice</a>
+  </nav>
+
+  <div class="content">
+    <div id="home" class="page">
+      <h2>Entry 1: This Is Me</h2>
+      <p>Hello! I'm <strong>Joyce Brigeed Acosta Orejarena</strong>, a dreamer and a learner. I believe that small actions can inspire change. I love to express myself and share what I believe in.</p>
+      <p>I grew up in a community where kindness, family and resilience matter. I carry those values with pride and passion. This blog is my space to reflect, grow and connect.</p>
+      <img src="https://i.imgur.com/7G4pr5w.jpg" alt="Joyce portrait">
+    </div>
+
+    <div id="memory" class="page hidden">
+      <h2>Entry 2: A Memory of Joy</h2>
+      <p>This image may look like a simple dinner — pasta and pizza — but it means so much more. It was a calm evening, filled with warmth and peace.</p>
+      <p>I’ve learned to treasure these small moments. They remind me of how beautiful life is when we take time to breathe, eat, smile, and be thankful.</p>
+      <img src="https://i.imgur.com/fbrLcY0.jpg" alt="Pizza and pasta dinner">
+    </div>
+
+    <div id="video" class="page hidden">
+      <h2>Entry 3: My Voice, My Purpose</h2>
+      <p>In this video, I share my thoughts on what it means to live with purpose, to care for others and our planet. I believe that every young person has a voice that matters. I want my voice to inspire action, reflection and hope.</p>
+      <iframe src="https://drive.google.com/file/d/1iDQUmGSksC8QiG5HtyPRrSN83O6OYeJ2/preview" width="100%" height="480" allow="autoplay"></iframe>
+    </div>
+  </div>
+
+  <div class="footer">
+    Blog created by Joyce Brigeed Acosta Orejarena – August 2025 | All photos and video are original.
+  </div>
+</body>
+</html>
